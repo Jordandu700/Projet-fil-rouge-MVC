@@ -16,8 +16,6 @@ require_once(__DIR__ . '/../Core/Database/PDOMySQL.php');
       $connexion->connect();
       $db = $connexion->getInstance();
 
-      echo '<br><br>results : ';
-
       $query = "SELECT attraction_id, name, url_image, description FROM attraction";
       $attractions = $db->query($query)->fetchAll(PDO::FETCH_ASSOC);
       var_dump($attractions);

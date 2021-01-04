@@ -9,10 +9,10 @@ input, label {
 
 .attractions_container {
     display : flex;
-    width : max-content;
-    margin : auto;
+    justify-content : center;
+    flex-wrap : wrap;
 }
 
 .attractions_container div {
-    margin-right : 100px;
+    margin-right : 40px;
 }

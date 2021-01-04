@@ -10,8 +10,6 @@ require_once(__DIR__ . '/../Models/AdminModel.php');
 
  class AdminController {
 
-    // private $repository;
-
     private $attractions;
 
     public function __construct() {

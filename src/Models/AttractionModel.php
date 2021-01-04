@@ -15,10 +15,8 @@ class AttractionModel {
         } else if ($queryType === 'update') {
             $query = "UPDATE attraction SET name = '$title', url_image = '$url_image', description = '$description' WHERE attraction_id = $id;";
         } else {
-            echo 'DELETE RECU DANS ATTRACTIONMODEL : ' . $id;
             $query = "DELETE FROM attraction WHERE attraction_id = $id;";
         }
-        echo 'QUERY TYPE DANS LE MODELE ' . $queryType;
         $db->exec($query);
     }
 }
