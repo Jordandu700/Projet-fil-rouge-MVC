@@ -1,0 +1,19 @@
+h2, form {
+    text-align : center;
+}
+
+input, label {
+    display : block;
+    margin : auto;
+}
+
+.attractions_container, .activities_container, .shows_container, .animations_container {
+    display : flex;
+    justify-content : center;
+    flex-wrap : wrap;
+}
+
+.attractions_container div, .activities_container div, .shows_container div, .animations_container div {
+    text-align : center;
+    margin-right : 40px;
+}
